@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>บันทึกใบรับประกันสินค้า</title>
+  <title>ลงทะเบียน E-Warranty</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
     integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -19,13 +19,12 @@
   <style>
     body {
       font-family: Kanit, sans-serif;
-      background: rgb(252, 233, 233);
-      background: linear-gradient(0deg, #e3ffe7 0%,#d9e7ff 81%, #d9e7ff 71%);
+      background: #f2e4e1;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
-      background-color: skyblue;
+      background-color: #f2e4e1;
     }
 
     .list {
@@ -97,12 +96,13 @@
 <body>
   <center>
     <br />
-    <img src="https://lh3.googleusercontent.com/d/1hTcB5YnvnJtMg0l4fIO5Jo20QbKF5_wh"
+    <img src="https://lh3.googleusercontent.com/d/17cQe3rWfEWiZQevKH2GQrqr967VUwUwb"
       style="width:150px; height:auto; padding-bottom: 10px; ">
     <div class="form-group mb-2">
       <label for="searchtext">
-        <h3>ลงทะเบียนรับประกันสินค้า</h3>
-        <h5 class="text-center text-danger">บริษัท สบายการค้า จำกัด</h5>
+        <h3>กรุณาส่งรูปสินค้าหรือใบเสร็จ</h3>
+        <h3>ก่อนลงทะเบียนนะคะ</h3>
+<!--         <h5 class="text-center text-danger"> </h5> -->
       </label>
     </div>
   </center>
@@ -112,7 +112,7 @@
       <div class="row justify-content-start g-3">
         <div class="col-12">
           <label for="name">ชื่อ-สกุล</label>
-          <input type="text" id="name" name="name" class="form-control" placeholder="ชื่อ-สกุล" required>
+          <input type="text" id="name" name="name" class="form-control" placeholder="กรุณากรอกชื่อนาม สกุล" required>
           <div class="invalid-feedback">
             กรุณากรอกชื่อ-สกุลด้วยค่ะ
           </div>
@@ -127,17 +127,17 @@
         </div>
         <div class="col-12">
           <label for="device">สินค้า</label>
-          <input type="text" id="device" name="device" class="form-control" placeholder="กรุณากรอกสินค้า" required>
+          <input type="text" id="device" name="device" class="form-control" placeholder="กรุณากรอกสินค้าที่ซื้อ" required>
           <div class="invalid-feedback">
-            กรุณากรอกสินค้าด้วยค่ะ
+            กรุณากรอกสินค้าที่ซื้อด้วยค่ะ
           </div>
         </div>
         <div class="col-12">
-          <label for="problem">ข้อเสนอแนะ</label>
-          <input type="text" id="problem" name="problem" class="form-control"
-            placeholder="กรุณากรอกข้อเสนอแนะ" required>
+          <label for="problem">กรอกวันเดือนปีเกิด รับส่วนลดพิเศษ</label>
+          <input type="date" id="problem" name="problem" class="form-control"
+            placeholder="">
           <div class="invalid-feedback">
-            กรุณากรอกข้อเสนอแนะด้วยค่ะ
+            กรุณากรอกวันเดือนปีเกิด
           </div>
         </div>
 
@@ -154,10 +154,10 @@
         </div>
 
       <div class="col-12">
-          <label for="place">อัพโหลดไฟล์</label><br>
+          <label for="place">อัพโหลดใบเสร็จหรือรูปสินค้า</label><br>
           <input type="file" name="fileUpload" id="fileUpload" required>
           <div class="invalid-feedback">
-            กรุณาอัพโหลดใบเสร็จ
+            กรุณาอัพโหลดรูป
           </div>
         </div>
 
