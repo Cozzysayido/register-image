@@ -140,16 +140,36 @@ button[type="submit"] {
           </div>
         </div>
 
-        <div class="col-12">
-          <label for="place">สาขา</label>
-          <input type="text" id="place" name="place" class="form-control"  placeholder="กรุณากรอกชื่อสาขา" required>
+       <div class="col-12">
+          <label for="place">สาขาที่ซื้อ</label>
+          <select class="form-select" id="place" aria-label="Default select example">
+            <option selected>กรุณาเลือกสาขา</option>
+            <option value="ออนไลน์">ออนไลน์</option>
+            <option value="เซ็นทรัลอีสวิล">เซ็นทรัลอีสวิล</option>
+            <option value="เซ็นทรัลเวิลด์">เซ็นทรัลเวิลด์</option>
+            <option value="เซ็นทรัลลาดพร้าว">เซ็นทรัลลาดพร้าว</option>
+            <option value="เซ็นทรัลเวสต์วิลล์">เซ็นทรัลเวสต์วิลล์</option>
+            <option value="เซ็นทรัลพระราม 9">เซ็นทรัลพระราม 9</option>
+            <option value="เซ็นทรัลเชียงใหม่">เซ็นทรัลเชียงใหม่</option>
+            <option value="เซ็นทรัลหาดใหญ่">เซ็นทรัลหาดใหญ่</option>
+            <option value="เซ็นทรัลศรีราชา">เซ็นทรัลศรีราชา</option>
+            <option value="เอ็มโพเรียม">เอ็มโพเรียม</option>
+            <option value="พารากอน">พารากอน</option>
+            <option value="เดอะมอลล์งามวศ์งวาน">เดอะมอลล์งามวศ์งวาน</option>
+            <option value="เดอะมอลล์บางกะปิ">เดอะมอลล์บางกะปิ</option>
+            <option value="เดอะมอลล์งามวศ์งวาน">เดอะมอลล์งามวศ์งวาน</option>
+            <option value="เดอะมอลล์บางกะปิ DPT">เดอะมอลล์บางกะปิ DPT</option>
+            <option value="เดอะมอลล์ท่าพระ DPT">เดอะมอลล์ท่าพระ DPT</option>
+            <option value="แฟชั่นไอส์แลนด์">แฟชั่นไอส์แลนด์</option>
+            <option value="สยามทากาซิยาม่า">สยามทากาซิยาม่า</option>
+          </select>
+           <div class="invalid-feedback">
+            กรุณากรอกชื่อสาขา
+          </div> 
+          <!-- <input type="file" id="file" name="file" class="form-control" required>-->
           <div class="invalid-feedback">
-            กรุณากรอกสาขาด้วยค่ะ
-          </div>
-          <!-- <input type="file" id="file" name="file" class="form-control" required>
-          <div class="invalid-feedback">
-            กรุณาอัพโหลดสลิปโอนเงิน
-          </div> -->
+            กรุณากรอกชื่อสาขา
+          </div> 
         </div>
 
       <div class="col-12">
